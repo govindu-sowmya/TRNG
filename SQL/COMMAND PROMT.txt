@@ -1,0 +1,162 @@
+Microsoft Windows [Version 10.0.19043.1348]
+(c) Microsoft Corporation. All rights reserved.
+
+D:\ETG TRAING>git config --global --list
+fatal: unable to read config file 'C:/Users/govindu.sowmya/.gitconfig': No such file or directory
+
+D:\ETG TRAING>git config --global user.name "sowmya"
+
+D:\ETG TRAING>git config --global user.email govindusowmya99@gmail.com
+
+D:\ETG TRAING>git config --global color.ui auto
+
+D:\ETG TRAING>git config --global core.editor Notepad
+
+D:\ETG TRAING>git config --global help.autocorrect 1
+
+D:\ETG TRAING>git config --global --list
+user.name=sowmya
+user.email=govindusowmya99@gmail.com
+color.ui=auto
+core.editor=Notepad
+help.autocorrect=1
+
+D:\ETG TRAING>git init
+Initialized empty Git repository in D:/ETG TRAING/.git/
+
+D:\ETG TRAING>git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+D:\ETG TRAING>git remote
+
+D:\ETG TRAING>git remote add origin https://github.com/govindu-sowmya/TRNG.git
+
+D:\ETG TRAING>git remote
+origin
+
+D:\ETG TRAING>git remote -v
+origin  https://github.com/govindu-sowmya/TRNG.git (fetch)
+origin  https://github.com/govindu-sowmya/TRNG.git (push)
+
+D:\ETG TRAING>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        SQL/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+D:\ETG TRAING>git add .
+warning: LF will be replaced by CRLF in SQL/6.sql.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in SQL/SQLQuery24.sql.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in SQL/SQLQuery3.sql.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in SQL/SQLQueryCONTRAINTS.sql.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in SQL/SQLQuerychigago.sql.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in SQL/SQLQueryjoints.sql.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in SQL/SQLQueryjoints2.sql.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in SQL/SQLQuerymanager.sql.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in SQL/SQLQuerysal.sql.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in SQL/SQLQuerytabels.sql.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in SQL/SQLQuerytask.sql.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in SQL/SQLQuerytask2.sql.
+The file will have its original line endings in your working directory
+
+D:\ETG TRAING>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   SQL/25.sql
+        new file:   SQL/6.sql
+        new file:   SQL/CLERK.sql
+        new file:   SQL/EMP DETAILS.sql
+        new file:   SQL/ENAME.sql
+        new file:   SQL/ETG.sql
+        new file:   SQL/SQL 24.sql
+        new file:   SQL/SQL ASSIGNMENT 50 QUERIES.txt
+        new file:   SQL/SQLQuery1.sql
+        new file:   SQL/SQLQuery24.sql
+        new file:   SQL/SQLQuery3.sql
+        new file:   SQL/SQLQuery4.sql
+        new file:   SQL/SQLQueryCONTRAINTS.sql
+        new file:   SQL/SQLQueryanalyst.sql
+        new file:   SQL/SQLQueryavg.sql
+        new file:   SQL/SQLQuerychigago.sql
+        new file:   SQL/SQLQueryjoints.sql
+        new file:   SQL/SQLQueryjoints2.sql
+        new file:   SQL/SQLQuerymanager.sql
+        new file:   SQL/SQLQuerysal.sql
+        new file:   SQL/SQLQuerytabels.sql
+        new file:   SQL/SQLQuerytask.sql
+        new file:   SQL/SQLQuerytask2.sql
+
+
+D:\ETG TRAING>git add .
+
+D:\ETG TRAING>git commit -m (sql file)
+error: pathspec 'file)' did not match any file(s) known to git
+
+D:\ETG TRAING>git commit -m "sql file"
+[master (root-commit) eeea51c] sql file
+ 23 files changed, 681 insertions(+)
+ create mode 100644 SQL/25.sql
+ create mode 100644 SQL/6.sql
+ create mode 100644 SQL/CLERK.sql
+ create mode 100644 SQL/EMP DETAILS.sql
+ create mode 100644 SQL/ENAME.sql
+ create mode 100644 SQL/ETG.sql
+ create mode 100644 SQL/SQL 24.sql
+ create mode 100644 SQL/SQL ASSIGNMENT 50 QUERIES.txt
+ create mode 100644 SQL/SQLQuery1.sql
+ create mode 100644 SQL/SQLQuery24.sql
+ create mode 100644 SQL/SQLQuery3.sql
+ create mode 100644 SQL/SQLQuery4.sql
+ create mode 100644 SQL/SQLQueryCONTRAINTS.sql
+ create mode 100644 SQL/SQLQueryanalyst.sql
+ create mode 100644 SQL/SQLQueryavg.sql
+ create mode 100644 SQL/SQLQuerychigago.sql
+ create mode 100644 SQL/SQLQueryjoints.sql
+ create mode 100644 SQL/SQLQueryjoints2.sql
+ create mode 100644 SQL/SQLQuerymanager.sql
+ create mode 100644 SQL/SQLQuerysal.sql
+ create mode 100644 SQL/SQLQuerytabels.sql
+ create mode 100644 SQL/SQLQuerytask.sql
+ create mode 100644 SQL/SQLQuerytask2.sql
+
+D:\ETG TRAING>git status
+On branch master
+nothing to commit, working tree clean
+
+D:\ETG TRAING>git push origin master
+info: please complete authentication in your browser...
+Enumerating objects: 26, done.
+Counting objects: 100% (26/26), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (20/20), done.
+Writing objects: 100% (26/26), 6.85 KiB | 305.00 KiB/s, done.
+Total 26 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), done.
+To https://github.com/govindu-sowmya/TRNG.git
+ * [new branch]      master -> master
+
+D:\ETG TRAING>
